@@ -5,13 +5,14 @@
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-color: #f5f5f5; /* Light grey background */
+    background-color: #edf2f7; /* Light grey background */
+    font-family: 'Arial', sans-serif; /* Font similar to the one in the image */
     padding: 20px;
 }
 
 .signup-heading {
     font-size: 36px;
-    color: #4a4a4a;
+    color: black;
     margin-bottom: 40px;
 }
 
@@ -24,7 +25,7 @@
 
 /* Buttons for user/admin selection */
 .option-button {
-    background-color: #6a0dad;
+    background-color: blue;
     color: white;
     padding: 15px 30px;
     font-size: 18px;
@@ -36,7 +37,7 @@
 }
 
 .option-button:hover {
-    background-color: #5a009e;
+    background-color: rgb(2, 2, 145);
 }
 
 /* Dropdown styling */
@@ -52,7 +53,7 @@
 .dropdown-option {
     padding: 10px;
     font-size: 16px;
-    color: #6a0dad;
+    color: blue;
     cursor: pointer;
     text-align: center;
     border-bottom: 1px solid #ddd;
@@ -72,11 +73,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 40%;
+    width: 90%; /* Changed to 90% to make it responsive */
+    max-width: 500px; /* Maximum width to prevent overflow on larger screens */
     background-color: white;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+     border-bottom: 5px solid #800080; /* Purple line at the bottom */
 }
 
 .form-container h2 {
@@ -90,7 +93,6 @@
     flex-direction: column;
     gap: 15px;
     width: 100%;
-    max-width: 400px;
 }
 
 .signup-form label {
@@ -98,7 +100,8 @@
     color: #4a4a4a;
 }
 
-.signup-form input, .signup-form select {
+.signup-form input,
+.signup-form select {
     padding: 10px;
     font-size: 16px;
     border-radius: 5px;
@@ -112,14 +115,15 @@
     letter-spacing: 3px;
 }
 
-.signup-form input:focus, .signup-form select:focus {
+.signup-form input:focus,
+.signup-form select:focus {
     outline: none;
     border-color: #6a0dad;
     box-shadow: 0 0 4px rgba(106, 13, 173, 0.5);
 }
 
 .submit-button {
-    background-color: #6a0dad;
+    background-color: green;
     color: white;
     padding: 12px 20px;
     font-size: 16px;
@@ -131,12 +135,48 @@
 }
 
 .submit-button:hover {
-    background-color: #5a009e;
+    background-color: rgb(1, 69, 1);
 }
 
-/* Responsive */
+/* Responsive adjustments */
 @media (max-width: 768px) {
-    .signup-form {
-        width: 90%;
+    .form-container {
+        width: 90%; /* Ensures the form takes up a large percentage of the screen */
+        padding: 15px; /* Reduced padding for small screens */
+    }
+
+    .signup-form input,
+    .signup-form select {
+        font-size: 14px; /* Slightly smaller font for inputs */
+    }
+
+    .signup-heading {
+        font-size: 28px; /* Reduce heading size on smaller screens */
+    }
+
+    .submit-button {
+        padding: 10px 15px; /* Adjust button padding for smaller screens */
+        font-size: 14px; /* Smaller font for the submit button */
+    }
+}
+
+@media (max-width: 480px) {
+    .form-container {
+        width: 100%; /* Takes full width on extra-small screens */
+        padding: 10px; /* Further reduce padding for extra small devices */
+    }
+
+    .signup-form input,
+    .signup-form select {
+        font-size: 12px; /* Smaller font for inputs */
+    }
+
+    .signup-heading {
+        font-size: 24px; /* Smaller heading size */
+    }
+
+    .submit-button {
+        padding: 8px 12px; /* Even smaller padding for extra-small devices */
+        font-size: 12px; /* Smaller font for submit button */
     }
 }
