@@ -1,7 +1,7 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes,Link } from "react-router-dom";
 import SignUpPage from "./Registration/SignUpPage";
-import './App.css';  
+import './App.css';  // Make sure the path to your CSS is correct
 
 
 const App = () => {
@@ -13,7 +13,7 @@ const App = () => {
       <div className="app">
        
         <Link to="/signup">
-          <button className="signup-button">Sign Up</button>
+          <button className="signup-button">SIGN UP</button>
         </Link>
 
         
