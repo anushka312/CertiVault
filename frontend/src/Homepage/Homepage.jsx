@@ -9,12 +9,19 @@ const HomePage = () => {
   const handleSignUpRedirect = () => {
     navigate('/signup');
   };
+  // for category redirect
+  const handleCategoryPageRedirect = () => {
+    navigate('/categories');
+  };
 
   return (
     <div className="homepage">
       <h1>Welcome to CertiVault</h1>
       <button className="signup-button" onClick={handleSignUpRedirect}>
         Sign Up
+      </button>
+      <button className="category-button" onClick={handleCategoryPageRedirect}>
+        Categories
       </button>
     </div>
   );

@@ -6,6 +6,7 @@ import UserSignUpForm from './Registration/UserSignUpForm'; // The form to sign 
 import AdminSignUpForm from './Registration/AdminSignUpForm'; // Admin form
 
 import "./App.css"; // Make sure the path to your CSS is correct
+import CategoryPage from "./CategoryPage/CategoryPage";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
         <Route path="/signup" element={<SignUpPage />} />
         <Route path="/signup/user-email" element={<UserSignUpForm />} />
         <Route path="/signup/admin-email" element={<AdminSignUpForm />} />
+        <Route path="/categories" element={<CategoryPage/>} />
       </Routes>
     </Router>
   );
