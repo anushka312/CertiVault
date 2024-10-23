@@ -3,7 +3,7 @@ const cors = require('cors');
 const sgMail = require('@sendgrid/mail');
 
 // Set up SendGrid API Key
-sgMail.setApiKey(''); // Add your SendGrid API Key here
+sgMail.setApiKey('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'); // Add your SendGrid API Key here
 
 const app = express();
 const port = 5000;
@@ -21,7 +21,7 @@ app.post('/send-otp', (req, res) => {
     
     const msg = {
         to: email,
-        from: '',// single sender verification email 
+        from: 'devesh.00003135516.aesl@gmail.com',// single sender verification email 
         subject: 'Your OTP Code for Verification',
         html: `
             <div style="font-family: Arial, sans-serif; text-align: center; color: #333;">
