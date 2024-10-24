@@ -1,0 +1,78 @@
+/* Full page wrapper with faint background */
+.category-page-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full page height */
+    background-color: #f8f9fa; /* Faint white background */
+}
+
+/* Box styling similar to sign-up page */
+.category-box {
+    background-color: white;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+    max-width: 800px;
+    width: 100%; /* Make it responsive */
+    position: relative;
+}
+
+/* Purple line at the bottom of the box */
+.category-box::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: purple; /* Purple color line */
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.category-heading {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Grid layout for the categories */
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1.5rem;
+    justify-items: center;
+    margin-top: 10%;
+}
+
+.category-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.category-item:hover {
+    transform: scale(1.05); /* Hover effect */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.category-icon {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 1rem;
+    
+}
+
+.category-item p {
+    margin: 0;
+    font-size: 1rem;
+    color: #333;
+    font-weight: 500;
+}

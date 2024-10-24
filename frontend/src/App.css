@@ -1,0 +1,29 @@
+.signup-button {
+    background-color: #6a0dad; /* Purple background */
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.signup-button:hover {
+    background-color: #5a009e; /* Darker purple on hover */
+}
+
+.category-button {
+    background-color: #6a0dad; /* Purple background */
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.category-button:hover {
+    background-color: #5a009e; /* Darker purple on hover */
+}
