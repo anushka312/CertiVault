@@ -1,15 +1,13 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-
+import Login_U from './components/Login/Login_U.jsx';
+import Report from './components/Report_Help/Report.jsx';
 
 const App = () => {
     return (
-        <Router>
-            <div>
-                <h1>Welcome to CertiVault</h1>
-                
-            </div>
-        </Router>
+        <div>
+            <Report></Report>
+        </div>
+
     );
 };
 
