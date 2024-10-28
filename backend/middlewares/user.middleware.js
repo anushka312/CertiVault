@@ -11,9 +11,9 @@ export const verifyUser = asyncHandler( async(req, _, next) => {
             throw new ApiError(401, "Unauthorized Request")
         }
 
-        const decodedToken = jwt.verify(token, process.env.JWT_TOKEN_SECRET)
+        const decodedToken = jwt.verify(token, process.env.JWT_SECRET)
 
-        const user = await User.findById(decodedToken?._id).select("-password")
+        const user = await User.findById(decodedToken?.id).select("-password")
         if(!user){
             // TODO: discussion on frontend ?
             throw new ApiError(401, "Invalid User Token")
