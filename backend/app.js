@@ -26,7 +26,7 @@ import userRouter from './routes/user.route.js'
 
 
 // Routes
-app.use('/check', checkRouter)
+app.use('/api/v1/check', checkRouter)
 
 // User Routes
 app.use('/api/v1/user', userRouter)

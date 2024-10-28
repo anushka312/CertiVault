@@ -30,8 +30,12 @@ const requestSchema = new Schema({
         type: Boolean,
         default: false
     },
-    remark: {
+    cancel: {
         type: Boolean,
+        default: false
+    },
+    remark: {
+        type: String,
         default: ""
     },
     // ! Additional Data For Requesting Document - Not Supporting In Beta
