@@ -1,0 +1,26 @@
+[
+    {
+        "fullname": "Alice Johnson",
+        "adminid": "admin001",
+        "password": "12345678",
+        "issuecount": 0,
+        "createdAt": "2024-10-01T12:00:00Z",
+        "updatedAt": "2024-10-01T12:00:00Z"
+    },
+    {
+        "fullname": "Bob Smith",
+        "adminid": "admin002",
+        "password": "12345678",
+        "issuecount": 0,
+        "createdAt": "2024-10-02T14:30:00Z",
+        "updatedAt": "2024-10-02T14:30:00Z"
+    },
+    {
+        "fullname": "Charlie Brown",
+        "adminid": "admin003",
+        "password": "12345678",
+        "issuecount": 0,
+        "createdAt": "2024-10-03T09:15:00Z",
+        "updatedAt": "2024-10-03T09:15:00Z"
+    }
+]

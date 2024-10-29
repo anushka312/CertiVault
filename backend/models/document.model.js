@@ -12,7 +12,8 @@ const documentSchema = new Schema({
         unique: true,
         index: true       
     },
-    conditions: [{condition: String}], // Default: Empty Array
+    conditions: [String], // Default: Empty Array, Correct Way To Define Array OF String
+    // conditions: [{condition: String}], // ! Wrong Methods
     image: {
         type: String,
         default: "none"
