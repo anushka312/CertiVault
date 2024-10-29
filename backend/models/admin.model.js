@@ -20,10 +20,6 @@ const adminSchema = new Schema({
     issuecount: {
         type: Number,
         default: 0
-    },
-    image: {
-        type: String,
-        default: "none"
     }
 }, {timestamps: true})
 

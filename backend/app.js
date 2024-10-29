@@ -23,13 +23,19 @@ app.use(cookieParser())
 // Route Imports
 import checkRouter from './routes/check.route.js'
 import userRouter from './routes/user.route.js'
+import adminRouter from './routes/admin.route.js'
 
 
 // Routes
 app.use('/api/v1/check', checkRouter)
 
+
 // User Routes
 app.use('/api/v1/user', userRouter)
+
+
+// Admin Routes
+app.use('/api/v1/admin', adminRouter)
 
 
 

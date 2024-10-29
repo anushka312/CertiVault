@@ -14,7 +14,7 @@ const issueSchema = new Schema({
         type: String,
         required: true
     },
-    adminid: {
+    admin: {
         type: String,
         required: true
     },

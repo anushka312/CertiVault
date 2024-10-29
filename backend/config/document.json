@@ -3,8 +3,8 @@
         "title": "Admission Form",
         "description": "Form for new students to apply for admission",
         "conditions": [
-            {"condition": "Must have all previous educational certificates"},
-            {"condition": "Submit a passport-sized photo"}
+            "Must have all previous educational certificates",
+            "Submit a passport-sized photo"
         ],
         "image": "https://example.com/admission_form.jpg",
         "template": "https://example.com/templates/admission_form_template.pdf",
@@ -12,23 +12,11 @@
         "updatedAt": "2024-01-15T10:30:00Z"
     },
     {
-        "title": "Internship Completion Certificate",
-        "description": "Certificate awarded to students who complete their internships",
-        "conditions": [
-            {"condition": "Minimum internship period of 6 weeks"},
-            {"condition": "Submission of internship report"}
-        ],
-        "image": "https://example.com/internship_certificate.jpg",
-        "template": "https://example.com/templates/internship_certificate_template.pdf",
-        "createdAt": "2024-03-12T12:00:00Z",
-        "updatedAt": "2024-03-12T12:00:00Z"
-    },
-    {
         "title": "Library Access Form",
         "description": "Form required for access to the college library",
         "conditions": [
-            {"condition": "Must be an enrolled student or faculty"},
-            {"condition": "Submit college ID for verification"}
+            "Must be an enrolled student or faculty",
+            "Submit college ID for verification"
         ],
         "image": "https://example.com/library_access.jpg",
         "template": "https://example.com/templates/library_access_template.pdf",
@@ -51,8 +39,8 @@
         "title": "Event Participation Certificate",
         "description": "Certificate for participation in college events",
         "conditions": [
-            {"condition": "Participated in at least one event"},
-            {"condition": "Attendance of at least 75%"}
+            "Participated in at least one event",
+            "Attendance of at least 75%"
         ],
         "image": "https://example.com/event_certificate.jpg",
         "template": "https://example.com/templates/event_certificate_template.pdf",
