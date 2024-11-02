@@ -44,6 +44,22 @@ const UserSignUpForm = ({ googleData, isGoogle }) => {
                     required
                     className="w-full px-3 py-2 border rounded-md text-sm"
                 />
+                 
+                <label className="block text-sm">Branch</label>
+                <input
+                    type="text"
+                    placeholder="Enter your branch"
+                    required
+                    className="w-full px-3 py-2 border rounded-md text-sm"
+                />
+                
+                <label className="block text-sm">Batch</label>
+                <input
+                    type="text"
+                    placeholder="Enter your Batch"
+                    required
+                    className="w-full px-3 py-2 border rounded-md text-sm"
+                />
 
                 <label className="block text-sm">Phone Number</label>
                 <input

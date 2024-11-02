@@ -20,7 +20,13 @@ export default function LeftBar() {
                             </button>
                         </Link>
                     </li>
-                    <li><button className="p-3 pl-7 pr-5 border-l-4 rounded-r-2xl border-indigo-300 hover:bg-blue-100">Fetch Documents</button></li>
+                    <li>
+                        <Link to="/fetch">
+                            <button className="p-3 pl-7 pr-5 border-l-4 rounded-r-2xl border-indigo-300 hover:bg-blue-100">
+                                Fetch Documents
+                            </button>
+                        </Link>
+                    </li>
                     <li><button className="p-3 pl-7 pr-10 border-l-4 rounded-r-2xl border-indigo-300 hover:bg-blue-100">About</button></li>
                     <li><button className="p-3 pl-7 pr-10 border-l-4 rounded-r-2xl border-indigo-300 hover:bg-blue-100">Report</button></li>
                 </ul>
