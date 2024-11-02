@@ -1,14 +1,28 @@
-const express = require('express');
-const cors = require('cors');
-const sgMail = require('@sendgrid/mail');
+import dotenv from "dotenv"
 
-// Set up SendGrid API Key
-sgMail.setApiKey(''); // Add your SendGrid API Key here
+import { app } from './app.js'
+import connectDB from "./db/index.js"
+import connectCloudinary from "./services/cloudinary.js"
+import express from 'express';
+import cors from 'cors';
+import sgMail from '@sendgrid/mail';
 
-const app = express();
-const port = 5000;
-app.use(cors());
-app.use(express.json());
+dotenv.config() 
+
+// Connect DB
+connectDB()
+.then( async () => { // ! Async ?
+    await connectCloudinary()
+    app.listen(process.env.PORT || 5000, () => console.log('Server Listening At Port: ', process.env.PORT || 5000))
+} )
+.catch( (err) => console.log("MongoDB connection failed\n Error: ", err) )
+
+sgMail.setApiKey('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'); // Add your SendGrid API Key here
+
+// const app = express();
+// //const port = 3000;
+// app.use(cors());
+// app.use(express.json());
 
 let otpStore = {}; // Store OTPs for email addresses
 
@@ -21,7 +35,7 @@ app.post('/send-otp', (req, res) => {
     
     const msg = {
         to: email,
-        from: '',// single sender verification email 
+        from: 'devesh.00003135516.aesl@gmail.com',// single sender verification email 
         subject: 'Your OTP Code for Verification',
         html: `
             <div style="font-family: Arial, sans-serif; text-align: center; color: #333;">
@@ -76,6 +90,6 @@ app.post('/verify-otp', (req, res) => {
 });
 
 // Start server
-app.listen(port, () => {
-    console.log(`Server running on port ${port}`);
-});
+// app.listen(port, () => {
+//     console.log(`Server running on port ${port}`);
+// });

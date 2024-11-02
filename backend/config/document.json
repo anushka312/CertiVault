@@ -1,0 +1,50 @@
+[
+    {
+        "title": "Admission Form",
+        "description": "Form for new students to apply for admission",
+        "conditions": [
+            "Must have all previous educational certificates",
+            "Submit a passport-sized photo"
+        ],
+        "image": "https://example.com/admission_form.jpg",
+        "template": "https://example.com/templates/admission_form_template.pdf",
+        "createdAt": "2024-01-15T10:30:00Z",
+        "updatedAt": "2024-01-15T10:30:00Z"
+    },
+    {
+        "title": "Library Access Form",
+        "description": "Form required for access to the college library",
+        "conditions": [
+            "Must be an enrolled student or faculty",
+            "Submit college ID for verification"
+        ],
+        "image": "https://example.com/library_access.jpg",
+        "template": "https://example.com/templates/library_access_template.pdf",
+        "createdAt": "2024-05-20T08:45:00Z",
+        "updatedAt": "2024-05-20T08:45:00Z"
+    },
+    {
+        "title": "Transcript Request Form",
+        "description": "Request form for obtaining official transcripts",
+        "conditions": [
+            {"condition": "Clearance of all dues"},
+            {"condition": "Submission of student ID"}
+        ],
+        "image": "https://example.com/transcript_request.jpg",
+        "template": "https://example.com/templates/transcript_request_template.pdf",
+        "createdAt": "2024-07-01T15:00:00Z",
+        "updatedAt": "2024-07-01T15:00:00Z"
+    },
+    {
+        "title": "Event Participation Certificate",
+        "description": "Certificate for participation in college events",
+        "conditions": [
+            "Participated in at least one event",
+            "Attendance of at least 75%"
+        ],
+        "image": "https://example.com/event_certificate.jpg",
+        "template": "https://example.com/templates/event_certificate_template.pdf",
+        "createdAt": "2024-09-10T18:20:00Z",
+        "updatedAt": "2024-09-10T18:20:00Z"
+    }
+]

@@ -1,8 +1,8 @@
 import React from 'react';
-import Academic from '../../assets/diploma.svg';
-import Finance from '../../assets/tax-consultant.svg';
-import Administrative from '../../assets/public-administration.svg';
-import Miscellanious from '../../assets/curiosity.svg';
+import Academic from '../assets/diploma.svg';
+import Finance from '../assets/tax-consultant.svg';
+import Administrative from '../assets/public-administration.svg';
+import Miscellanious from '../assets/curiosity.svg';
 
 const CategoryPage = () => {
     return (
