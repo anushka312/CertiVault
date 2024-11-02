@@ -17,7 +17,7 @@ connectDB()
 } )
 .catch( (err) => console.log("MongoDB connection failed\n Error: ", err) )
 
-sgMail.setApiKey('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'); // Add your SendGrid API Key here
+sgMail.setApiKey(''); // Add your SendGrid API Key here
 
 // const app = express();
 // //const port = 3000;
@@ -35,7 +35,7 @@ app.post('/send-otp', (req, res) => {
     
     const msg = {
         to: email,
-        from: 'devesh.00003135516.aesl@gmail.com',// single sender verification email 
+        from: '',// single sender verification email 
         subject: 'Your OTP Code for Verification',
         html: `
             <div style="font-family: Arial, sans-serif; text-align: center; color: #333;">
