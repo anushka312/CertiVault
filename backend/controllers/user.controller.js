@@ -75,6 +75,18 @@ const getUserProfile = asyncHandler( async (req, res) => {
 } )
 
 
+
+const viewDocuments = asyncHandler( async (req, res) => {
+    // console.log(req.query);
+    const { documentid } = req.query
+    console.log(documentid);
+
+    const document = await Document.findById(documentid)
+    return res.status(200).json(new ApiResponse(200, document, "Document Fetched"))
+} )
+
+
+
 const viewAllDocuments = asyncHandler( async (req, res) => {
     const documents = await Document.find({})
     return res.status(200).json(new ApiResponse(200, documents, "Documents Fetched"))
@@ -133,5 +145,6 @@ export {
     viewAllDocuments,
     requestDocument,
     getDocumentRequests,
-    cancelDocumentRequest
+    cancelDocumentRequest,
+    viewDocuments
 }
